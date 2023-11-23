@@ -244,8 +244,8 @@ namespace PL
                         try
                         {
                             People.SetProvider(input);
-                        }catch (Exception e) { Console.WriteLine("Wrong input"); continue; }
-                        continue;
+                            return;
+                        }catch (Exception) { Console.WriteLine("Wrong input"); continue; }
                 }
             }
             while (!done);
