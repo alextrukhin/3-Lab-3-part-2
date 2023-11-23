@@ -2,11 +2,6 @@
 
 namespace DAL
 {
-    public interface IProvider<T> where T : class
-    {
-        public List<T> Load();
-        public void Save(List<T> listToSave);
-    }
     public class EntityContext<T> where T : class, new()
     {
         public IProvider<T> Provider;
